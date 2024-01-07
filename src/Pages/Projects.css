@@ -1,0 +1,114 @@
+.project-bg{
+    color: white;
+    background-image: url('../images/19852464_6193220.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project-bg h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    background-image: url('../images/text-bg.jpg');
+    background-position: 0 0;
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: about 20s linear infinite;
+}
+@keyframes about {
+    100%{
+        background-position: 200px 10px;
+    }
+}
+.image-sec{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+.project-div{
+    border: 1px solid white;
+    height: 20rem;
+    width: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0.5rem 0rem;
+    box-shadow: rgba(65, 46, 240, 0.4) -5px 5px, rgba(75, 46, 240, 0.3) -10px 10px, rgba(91, 46, 240, 0.2) -15px 15px, rgba(140, 46, 240, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.project-div:hover{
+    transform: scale(1.1);
+}
+.project-div h3{
+    margin: 2rem;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.project-div p{
+    margin: 3rem;
+}
+.project-div a:visited{
+    color: blue;
+}
+.project-div:nth-child(1){
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.1)),url('../images/fitbro.png');
+    animation: child1 3s ease-out;
+}
+.project-div:nth-child(2){
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.5)),url('../images/madhyaparadhesh.png');
+    animation: child1 3s ease-out;
+    margin-top: 2rem;
+}
+.project-div:nth-child(3){
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.5)),url('../images/naruto-site.png');
+    animation: child1 3s ease-out;
+    margin-top: 3rem;
+}
+@keyframes child1 {
+    0%{
+        transform: translateX(-1000px);
+    }
+    50%{
+        transform:  translateX(0px);
+    }
+    100%
+    {
+        transform: translateX(00px);
+    }
+}
+.project-div:nth-child(4){
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.4)),url('../images/loading.png');
+    animation: child2 3s ease-out;
+    /* margin-top: 3rem; */
+}
+.project-div:nth-child(5){
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.7)),url('../images/design1.png');
+    animation: child2 3s ease-out;
+    margin-top: 2rem;
+}
+.project-div:nth-child(6){
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.4)),url('../images/spotify.png');
+    animation: child2 3s ease-out;
+    margin-top: 3rem;
+}
+@keyframes child2 {
+    0%{
+        transform: translateX(1000px);
+    }
+    50%{
+        transform:  translateX(0px);
+    }
+    100%
+    {
+        transform: translateX(00px);
+    }
+}
+

@@ -1,0 +1,201 @@
+.experience-sec{
+    /* display: flex; */
+    padding: 0.25rem;
+    height: auto;
+    background-image: url('../images/19852464_6193220.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.experience-sec h1{
+    text-transform: uppercase;
+    width: fit-content;
+    margin: auto;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    background-image: url('../images/text-bg.jpg');
+    background-position: 0 0;
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: about 20s linear infinite;
+    font-size: 2.5rem;
+}
+@keyframes about {
+    100%{
+        background-position: 200px 10px;
+    }
+}
+.ex-left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    backdrop-filter: blur(3px);
+    gap: 10px;
+}
+.container
+{
+    margin:auto;
+  position:relative;
+  width:fit-content;
+  display:flex;
+}
+.container .card
+{
+    margin: 1rem 1rem;
+  position:relative;
+  width:250px;
+  background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:270px;
+  border-radius:4px;
+  text-align:center;
+  overflow:hidden;
+  transition:0.5s;
+
+  border-inline-start: 4px solid ;
+  border-block-start: 4px solid ;
+  border-image-source: radial-gradient(circle at top left, #00ff43, transparent 75%);
+  border-image-slice: 1;
+}
+.container .card:hover
+{
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,.5);
+}
+.container .card:before
+{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-50%;
+  width:100%;
+  height:100%;
+  background:rgba(255,255,255,.03);
+  pointer-events:none;
+  z-index:1;
+}
+.percent
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  box-shadow: inset 0 0 50px #000;
+  background:#222;
+  z-index:1000;
+}
+.percent .num
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+}
+.percent .num h2
+{
+  color:#777;
+  font-weight:700;
+  font-size:40px;
+  transition:0.5s;
+}
+.card:hover .percent .num h2
+{
+  color:#fff;
+  font-size:60px;
+}
+.percent .num h2 span
+{
+  color:#777;
+  font-size:24px;
+  transition:0.5s;
+}
+.card:hover .percent .num h2 span
+{
+  color:#fff;
+}
+.text
+{
+  position:relative;
+  color:#777;
+  margin-top:20px;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+.card:hover .text
+{
+  color:#fff;
+}
+svg
+{
+  position:relative;
+  width:150px;
+  height:150px;
+  z-index:1000;
+}
+svg circle
+{
+  width:100%;
+  height:100%;
+  fill:none;
+  stroke:#191919;
+  stroke-width:10;
+  stroke-linecap:round;
+  transform:translate(5px,5px);
+}
+svg circle:nth-child(2)
+{
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+}
+.container:nth-child(1) .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 70) / 100);
+  stroke:#00ff43;
+}
+.container:nth-child(2)  .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 40) / 100);
+  stroke:#00ff43;
+}
+.container:nth-child(3)  .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 60) / 100);
+  stroke:#00ff43;
+}
+.container:nth-child(4)  .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 60) / 100);
+  stroke:#00ff43;
+}
+.container:nth-child(5)  .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 70) / 100);
+  stroke:#00ff43;
+}
+.container:nth-child(6)  .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 60) / 100);
+  stroke:#00ff43;
+}
+.container:nth-child(7)  .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 60) / 100);
+  stroke:#00ff43;
+}
+.container:nth-child(8)  .card:nth-child(1) svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 50) / 100);
+  stroke:#00ff43;
+}
